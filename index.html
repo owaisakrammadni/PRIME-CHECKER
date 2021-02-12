@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Function Isprime</title>
+</head>
+
+<body>
+    <div class="main">
+    <h1><u>Findout Number Prime "True" Not Prime "False"</u></h1>
+    <form action="#" onsubmit="return ISprime()">
+        <label>Enter Number:</label>
+        <input type="number" id="users">
+        <input type="submit" value="Find">
+        <br>
+        <br>
+        <h2 id="results"></h2>
+    </form>
+</div>
+</body>
+<script>
+    function ISprime(user) {
+        user = parseInt(document.getElementById("users").value);
+        s = 0;
+        if ((user % 2) === 0) {
+            s = 1;
+            return document.getElementById("results").innerHTML = false;
+        }
+        else if (s === 0) {
+            return document.getElementById("results").innerHTML = true;
+
+        }
+        return false;
+    }
+</script>
+
+</html>
